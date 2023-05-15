@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?><!--SPG:
+
+קובץ HTML זה שויך לפריסת דף של SharePoint (קובץ ‎.aspx) בעלת שם זהה. כל עוד הקבצים משויכים, לא תהיה לך אפשרות לערוך את קובץ ה- ‎.aspx, וכל פעולות שינוי השם, ההעברה או המחיקה יוחזרו.
+
+כדי לבנות את פריסת הדף ישירות מתוך קובץ HTML זה, פשוט הזן תוכן במצייני מיקום תוכן. השתמש ביוצר המקטעים ב- http://intpmoclick/_layouts/15/ComponentHome.aspx?Url=http%3A%2F%2Fintpmoclick%2F%5Fcatalogs%2Fmasterpage%2FClick%2Fviews%2FPageLayouts%2FClickHomePageLayout%2Easpx כדי ליצור ולהתאים אישית מצייני מיקום תוכן נוספים וישויות SharePoint שימושיות אחרות, ולאחר מכן העתק והדבק אותם כמקטעי HTML בקוד ה- HTML. כל העדכונים בתוך מצייני מיקום תוכן בקובץ זה יסונכרנו באופן אוטומטי עם פריסת הדף המשויכת.
+
+-->
+<!DOCTYPE html[]>
+<html lang="en" xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderPageTitle" runat="server">-->
+            <!--MS:<SharePoint:ProjectProperty Property="Title" runat="server">-->
+            <!--ME:</SharePoint:ProjectProperty>-->
+            <!--CS: הפעל מקטע שדה דף: כותרת-->
+            <!--SPM:<%@Register Tagprefix="PageFieldFieldValue" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--MS:<PageFieldFieldValue:FieldValue FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server">-->
+            <!--ME:</PageFieldFieldValue:FieldValue>-->
+            <!--CE: סיים מקטע שדה דף: כותרת-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderAdditionalPageHead" runat="server">-->
+            <!--CS: הפעל מקטע לוח מצב עריכה-->
+            <!--SPM:<%@Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--SPM:<%@Register Tagprefix="Publishing" Namespace="Microsoft.SharePoint.Publishing.WebControls" Assembly="Microsoft.SharePoint.Publishing, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--MS:<Publishing:EditModePanel runat="server" id="editmodestyles">-->
+                <!--MS:<SharePoint:CssRegistration name="&#60;% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/editmode15.css %&#62;" After="&#60;% $SPUrl:~sitecollection/Style Library/~language/Themable/Core Styles/pagelayouts15.css %&#62;" runat="server">-->
+                <!--ME:</SharePoint:CssRegistration>-->
+            <!--ME:</Publishing:EditModePanel>-->
+            <!--CE: סיים מקטע לוח מצב עריכה-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <!--MS:<asp:ContentPlaceHolder id="PlaceHolderBodyAreaClass" runat="server">-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <link href="/_catalogs/masterpage/Click/public/css/Click.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/Click/public/css/personalData.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/Click/public/css/reminders.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/Click/public/css/favorites.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/Click/public/css/Services.css" rel="stylesheet" />
+        <link href="/_catalogs/masterpage/Click/public/css/fabric.min.css" rel="stylesheet" />
+        <!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderPageTitleInTitleArea>
+<mso:ContentPlaceHolderHashPlaceHolderMain msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderMain>
+<mso:HtmlDesignStatusAndPreview msdt:dt="string">http://intpmoclick/_catalogs/masterpage/Click/views/PageLayouts/ClickHomePageLayout.html, אזהרות ושגיאות.</mso:HtmlDesignStatusAndPreview>
+<mso:ContentTypeId msdt:dt="string">0x01010007FF3E057FA8AB4AA42FCB67B453FFC100E214EEE741181F4E9F7ACC43278EE8110003D357F861E29844953D5CAA1D4D8A3B</mso:ContentTypeId>
+<mso:ContentPlaceHolderHashPlaceHolderAdditionalPageHead msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderAdditionalPageHead>
+<mso:ContentPlaceHolderHashPlaceHolderPageTitle msdt:dt="string">1</mso:ContentPlaceHolderHashPlaceHolderPageTitle>
+<mso:MasterHash msdt:dt="string">1515931356</mso:MasterHash>
+<mso:HtmlDesignFromMaster msdt:dt="string">/_catalogs/masterpage/Click/views/MasterPages/‏‏‏‏‏‏PMOClickMasterPage.html, /_catalogs/masterpage/Click/views/MasterPages/‏‏‏‏‏‏PMOClickMasterPage.html</mso:HtmlDesignFromMaster>
+<mso:PublishingAssociatedContentType msdt:dt="string">;#דף מאמר;#0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF3900242457EFB8B24247815D688C526CD44D;#</mso:PublishingAssociatedContentType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+<mso:ContentPlaceHolderChangedPlaceHolderPageTitle msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderPageTitle>
+<mso:ContentPlaceHolderChangedPlaceHolderAdditionalPageHead msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderAdditionalPageHead>
+<mso:ContentPlaceHolderChangedPlaceHolderMain msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderMain>
+<mso:ContentPlaceHolderHashPlaceHolderBodyAreaClass msdt:dt="string">268219038</mso:ContentPlaceHolderHashPlaceHolderBodyAreaClass>
+<mso:ContentPlaceHolderChangedPlaceHolderPageTitleInTitleArea msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderPageTitleInTitleArea>
+
+<mso:ContentPlaceHolderChangedPlaceHolderBodyAreaClass msdt:dt="string">True</mso:ContentPlaceHolderChangedPlaceHolderBodyAreaClass>
+
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+        <title>ClickHomePageLayout </title>
+    </head>
+    <body>
+        <!--MS:<asp:ContentPlaceHolder ID="PlaceHolderPageTitleInTitleArea" runat="server">-->
+            <!--CS: הפעל מקטע שדה דף: כותרת-->
+            <!--SPM:<%@Register Tagprefix="PageFieldFieldValue" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+            <!--MS:<PageFieldFieldValue:FieldValue FieldName="fa564e0f-0c70-4ab9-b863-0177e6ddd247" runat="server">-->
+            <!--ME:</PageFieldFieldValue:FieldValue>-->
+            <!--CE: סיים מקטע שדה דף: כותרת-->
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <!--MS:<asp:ContentPlaceHolder ID="PlaceHolderMain" class="bb" runat="server">-->
+            <div class="flex__container" id="homepage__container">
+                <div class="main__container">
+                    <div data-name="WebPartZone">
+                        <!--CS: הפעל מקטע אזור Web Part-->
+                        <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                        <div xmlns:ie="ie">
+                            <!--MS:<WebPartPages:WebPartZone runat="server" ID="mainarea" AllowPersonalization="False" FrameType="TitleBarOnly" Orientation="Vertical">-->
+                                <!--MS:<ZoneTemplate>-->
+                                    <!--DC: החלף הערה זו ברכיבי ה- Web Part המוגדרים כברירת המחדל עבור דפים חדשים. -->
+                                <!--ME:</ZoneTemplate>-->
+                            <!--ME:</WebPartPages:WebPartZone>-->
+                        </div>
+                        <!--CE: סיים מקטע אזור Web Part-->
+                    </div>
+                </div>
+                <div id="personalarea__container">
+                    <div data-name="WebPartZone">
+                        <!--CS: הפעל מקטע אזור Web Part-->
+                        <!--SPM:<%@Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c"%>-->
+                        <div xmlns:ie="ie">
+                            <!--MS:<WebPartPages:WebPartZone runat="server" ID="personalarea" AllowPersonalization="False" FrameType="TitleBarOnly" Orientation="Vertical">-->
+                                <!--MS:<ZoneTemplate>-->
+                                    <!--DC: החלף הערה זו ברכיבי ה- Web Part המוגדרים כברירת המחדל עבור דפים חדשים. -->
+                                <!--ME:</ZoneTemplate>-->
+                            <!--ME:</WebPartPages:WebPartZone>-->
+                        </div>
+                        <!--CE: סיים מקטע אזור Web Part-->
+                    </div>
+                </div>
+            </div>
+        <!--ME:</asp:ContentPlaceHolder>-->
+        <script src="/_catalogs/masterpage/Click/public/js/browser.js">//<![CDATA[
+        
+        //]]>
+        </script>
+        <script src="/_catalogs/masterpage/Click/util/calendar.js">//<![CDATA[
+        
+        //]]>
+        </script>
+        <script src="/_catalogs/masterpage/Click/util/utils.js">//<![CDATA[
+        
+        //]]>
+        </script>
+        <script src="/_catalogs/masterpage/Click/public/js/init.js">//<![CDATA[
+        
+        //]]>
+        </script>
+    </body>
+</html>

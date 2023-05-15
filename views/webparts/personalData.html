@@ -1,0 +1,136 @@
+﻿<div id="personalData__container">
+    <!-- Events -->
+    <div class="accordion__container">
+        <div class="accordion collapsible" id="accordion__container__events" title="הצג לוח שנה">
+            <span>יומן תזכורות</span>
+        </div>
+        <div id="events" class="panel collapse">
+            <!--    Calendar widget -->
+            <div id="calendarContainer" class="elegant-calencar">
+                <div id="calendar__month">
+                    <div class="pre-button pointer">&lt;</div>
+                    <div class="head-info">
+                        <!-- <div class="head-day"></div> -->
+                        <div class="head-month"></div>
+                    </div>
+                    <div class="next-button pointer">></div>
+                </div>
+                <table id="calendar" class="pmoTableCalander">
+                    <thead class="pmoTableCalanderHeader">
+                        <tr>
+                            <th>א</th>
+                            <th>ב</th>
+                            <th>ג</th>
+                            <th>ד</th>
+                            <th>ה</th>
+                            <th>ו</th>
+                            <th>ש</th>
+                        </tr>
+                    </thead>
+                    <tbody class="pmoTableCalanderBody">
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div id="dateSlider">
+            <div id="reminderDetails">
+                <p id="prevReminder">
+                    <div class="arrow-right" onclick="prevEvent()"></div>
+                </p>
+                <p id="reminderStartDate"></p>
+                <p id="reminderDescription"></p>
+                <p id="nextReminder">
+                    <div class="arrow-left" onclick="nextEvent()"></div>
+                </p>
+            </div>
+            <p id="showCalendarImg"><img alt="ShowCalendar" title="הצג לוח שנה" onclick="toggleCalendar(this)" src="/_catalogs/masterpage/click/public/images/ShowCalendar.png" width="32" height="32" /></p>
+        </div>
+
+    </div>
+    <!-- Docs  -->
+    <div class="accordion__container">
+        <div class="accordion collapsible" id="accordion__container__docs" title="הצגת מסמכים אחרונים">
+            <span>המסמכים שלי&nbsp;</span>
+        </div>
+        <div class="panel collapse">
+            <div id="docs" class="innerPanel"></div>
+        </div>
+    </div>
+    <!-- Tasks  -->
+    <div class="accordion__container">
+        <div class="accordion collapsible" id="accordion__container__tasks" title="הצגת משימות">
+            <span>המשימות שלי&nbsp;</span>
+        </div>
+        <div class="panel collapse">
+            <div id="tasks" class="innerPanel">
+                <div id="openTasks">
+                    <div class="groupText" id="openTasksGroupText">משימות פתוחות&nbsp;</div>
+                </div>
+                <div id="doingTasks">
+                    <div class="groupText" id="doingTasksGroupText">משימות בביצוע&nbsp;</div>
+                </div>
+                <div id="waitingTasks">
+                    <div class="groupText" id="waitingTasksGroupText">משימות בהשהייה&nbsp;</div>
+                </div>
+                <div id="completedTasks">
+                    <div class="groupText" id="completedTasksGroupText">משימות שהסתיימו&nbsp;</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

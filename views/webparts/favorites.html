@@ -1,0 +1,58 @@
+<article id="favorites__form">
+    <!-- Notification Area  -->
+    <div class="alert" id="mainAlert">
+        <span class="closebtnalert" onclick="hideNotification(this)">×</span>
+        <strong class="alert__prefix"></strong>
+        <span class="alert__message"></span>
+    </div>
+    <!-- Form Area  -->
+
+    <!--  Type  -->
+    <section class="favorites__rowSpace">
+        <label>סוג</label>
+        <div class="flex__container favorites__form_typeContainer">
+            <div class="formType">
+                <input class="favField disAddFav" type="radio" id="doc" name="fType" value="doc">
+                <label for="doc">מסמך</label><img alt='AddToFavorite' src='/_catalogs/masterpage/Click/public/images/fileIcon.png' />
+            </div>
+            <div class="formType">
+                <input class="favField disAddFav" type="radio" id="page" name="fType" value="page">
+                <label for="page">דף</label><img alt='AddToFavorite' src='/_catalogs/masterpage/Click/public/images/pageIcon.png' />
+            </div>
+            <div class="formType">
+                <input class="favField disAddFav" type="radio" id="form" name="fType" value="form">
+                <label for="form">טופס</label>
+                <img alt='AddToFavorite' src='/_catalogs/masterpage/Click/public/images/formsIcon.png' />
+            </div>
+        </div>
+    </section>
+    <!--  DisplayName -->
+    <section class="favorites__rowSpace">
+        <label>כותרת(שם תצוגה)</label>
+        <div class="flex__container">
+            <input class="favorite__input favField disAddFav" type="text" id="favName" textlName="textName" placeholder="הזן בבקשה שם..." />
+        </div>
+    </section>
+    <!--  Url -->
+    <section class="favorites__rowSpace">
+        <label>כתובת</label>
+        <div class="flex__container">
+            <input class="favorite__input favField disAddFav" type="text" id="favUrl" urlName="urlName" placeholder="הזן בבקשה את הכתובת למקור התוכן..." />
+        </div>
+    </section>
+    <input class="flex__container" type="text" id="favIndexUpdate" />
+    <!--  Preview -->
+    <section class="favorites__rowSpace">
+        <div class="flex__container" id="favorites__preview">
+            <button onclick="drawFavoritePreview()" type="button" value="insert" class="btnShowPreview disAddFav">הוספת מועדף +<i class='far fa-edit'></i></button>
+            <div id="formFavoritesPreview"></div>
+        </div>
+    </section>
+    <!--  Buttons -->
+    <section class="flex__container favorites__form__btn">
+        <button type="button" class="click__btn" id="cancel__btn" onclick="closeFavoriteModal('/_catalogs/masterpage/Click/controllers/AddToFavorite.js')">בטל</button>
+        <button type="button" class="click__btn" id="save__btn" onclick="addToFavorite()">שמור</button>
+    </section>
+
+</article>
+<div id="loader"></div>

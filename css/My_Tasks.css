@@ -1,0 +1,65 @@
+.myTasks{
+    background-color:rgb(231,233,248);
+}
+
+.myTasksRow{
+    padding-top: 5px;
+}
+
+.myTasksCol{
+    color: white;
+    background-color:rgb(53,94,126);
+}
+
+.title{
+    font-size: 40px;
+    padding: 5px;
+}
+
+.content{
+    font-size: 20px;
+    padding: 25px;
+    text-decoration: underline;
+}
+
+.groupText{
+    color: rgb(28,75,107);
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 10px;
+}
+
+.groupContentText{
+    color: white;
+    font-size: 30px;
+}
+
+.groupContentAText{
+    color: white;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.groupContentAText:visited{
+    color: white;
+}
+
+.green{
+    background-color: rgb(139, 193, 79);
+    color: white;
+}
+
+.yellow{
+    background-color: rgb(246, 187, 67);
+    color: white;
+}
+
+.blue{
+    background-color:rgb(53,94,126);
+    color: white;
+}
+
+.red{
+    background-color: rgb(237, 84, 99);
+    color: white;
+}

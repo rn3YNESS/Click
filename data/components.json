@@ -1,0 +1,4 @@
+{"Fields":{"Field":[{"Type": "Text","Name": "DemoField","DisplayName": "שדה בדיקה","Required": "FALSE","Group": "ClickSC","self-closing": "true"},{"Type": "Choice","Name": "DemoFieldOptions","DisplayName": "שדה בדיקה אפשרויות","Required": "FALSE","Group": "ClickSC","CHOICES": {  "CHOICE": ["מסמך","דף","טופס"]}},{"Type": "Boolean","Name": "DemoFieldYesNo","DisplayName": "שדה בדיקה בוליאני","Required": "FALSE","Group": "ClickSC","self-closing": "true"}]}}
+
+
+{"ContentTypes":{"ContentType":[{"Name": "DemoCT1","Group": "ClickCT","Description": "CTDescription","Parent": "0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39"},{"Name": "DemoCT2","Group": "ClickCT","Description": "CTDescription2","Parent": "0x0105"},{"Name": "DemoCT3","Group": "ClickCT","Description": "CTDescription3","Parent": ""}]}}

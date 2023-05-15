@@ -1,0 +1,70 @@
+.ms-acal-color1{
+    background-color: #efa118;
+
+}
+
+.ms-acal-color2{
+    background-color: #0072c6;
+
+}
+
+.ms-acal-color3{
+    background-color: #288054;
+
+}
+
+.ms-acal-color4{
+    background-color: #767956;
+
+}
+
+.ms-acal-color5{
+    background-color: #ed0033;
+
+}
+
+.ms-acal-color6{
+    background-color: #682a7a;
+
+}
+
+.ms-acal-color7{
+    background-color: #f05a83;
+
+}
+
+.ms-acal-color8{
+    background-color: #fe885a;
+
+}
+
+#iconspan {
+    width: 100px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.titlecommon {
+    font-family: assistant;
+    padding-right: 30px;
+}
+
+.title1 {
+    font-size: 2em;
+}
+
+.title2 {
+    color: white;
+    font-size: 1.3em;
+}
+
+.title3 {
+    color: white;
+    font-size: 1.3em;
+}
+
+
+.ms-breadcrumb-box{
+    display:none;
+}

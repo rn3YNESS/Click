@@ -1,0 +1,77 @@
+<article class="click__form" id="tasks__form">
+    <!-- Notification Area  -->
+    <div class="alert" id="mainAlert">
+        <span class="closebtnalert" onclick="hideNotification(this)">×</span>
+        <strong class="alert__prefix"></strong>
+        <span class="alert__message"></span>
+    </div>
+    <!-- Form Area  -->
+    <section class="form__rowSpace">
+        <div>
+        </div>
+    </section>
+    <section class="form__rowSpace form__fields__container">
+        <div class="flex__container form_typeContainer">
+            <input type="hidden" id="taskId" title="" />
+            <label><img alt="lock" class="lockIcon"
+                    src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                    שם משימה</label>
+            <input class="form__input taskField disabledField" type="text" id="taskTitle" disabled />
+            <label><img alt="lock" class="lockIcon"
+                    src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                    מצב משימה</label>
+            <select class="form__select taskField" id="taskComplete" disabled>
+                        <option value="לא התחילה">לא התחילה</option>
+                        <option value="מתבצע">מתבצע</option>
+                        <option value="הושלם">הושלם</option>
+                        <option value="נדחה">נדחה</option>
+                        <option value="ממתין למישהו אחר">ממתין למישהו אחר</option>
+                    </select>
+            <label><img alt="lock" class="lockIcon"
+                    src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                תאריך התחלה</label>
+            <input type="date" class="form__input taskField disabledField" id="taskStartDate" disabled onchange="convertDate(this)" name="date" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+            <label><img alt="lock" class="lockIcon"
+                    src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                    תאריך יעד</label>
+            <input type="date" class="form__input taskField disabledField" id="taskDueDate" disabled onchange="convertDate(this)" name="date" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31">
+            <label><img alt="lock" class="lockIcon"
+                src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                עדיפות</label>
+            <select class="form__select taskField" id="taskPriority" name="taskPriority" disabled>
+            <option value="(1) גבוהה">(1) גבוהה</option>
+            <option value="(2) רגילה">(2) רגילה</option>
+            <option value="(3) נמוכה">(3) נמוכה</option>
+        </select>
+        </div>
+        <div class="flex__container form_typeContainer">
+            <label>
+                <img alt="lock" class="lockIcon" src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                ביצוע
+            </label>
+            <div class="taskPercentComplete__container">
+                <div class="percentComplete" id="taskPercentComplete"></div>
+            </div>
+            <label>
+                <img alt="lock" class="lockIcon" src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                מוקצה ל-
+            </label>
+            <div class="form__input taskField disabledField" id="taskAssignedTo"></div>
+            <div class="form__input disabledField" id="taskDisplayName">
+            </div>
+            <label>
+                <img alt="lock" class="lockIcon" src="/_catalogs/masterpage/click/public/images/lock-4-16.png" title="נעול לעריכה" />
+                תיאור
+            </label>
+            <textarea class="form__input taskField disabledField" id="taskDescription" rows="6" disabled></textarea>
+        </div>
+    </section>
+    <!--  Buttons -->
+    <section class="flex__container form__btn">
+        <button type="button" id="cancel__btn" class="click__btn" onclick="closeModal()">סגור</button>
+        <button type="button" id="edit__btn" class="click__btn" onclick="editTask()">ערוך</button>
+        <button type="button" id="save__btn" class="click__btn" onclick="updateTask()" disabled>שמור</button>
+    </section>
+
+</article>
+<div id="loader"></div>

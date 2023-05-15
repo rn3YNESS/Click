@@ -1,0 +1,28 @@
+<article class="click__form" id="tasks__form">
+    <!-- Notification Area  -->
+    <div class="alert" id="mainAlert">
+        <span class="closebtnalert" onclick="hideNotification(this)">×</span>
+        <strong class="alert__prefix"></strong>
+        <span class="alert__message"></span>
+    </div>
+    <!-- Form Area  -->
+    <section class="form__rowSpace">
+        <div>
+        </div>
+    </section>
+    <section class="form__rowSpace form__fields__container">
+        <div class="flex__container form_linkContainer">
+            <input type="hidden" id="linkId" title="" />
+            <label>שם תצוגה</label>
+            <input class="form__input" type="text" id="linkTitle" />
+            <label>קישור</label>
+            <input class="form__input" type="text" id="linkUrl" />
+        </div>
+    </section>
+    <!--  Buttons -->
+    <section class="flex__container form__btn">
+        <button type="button" id="cancel__btn" class="click__btn" onclick="closeModal()">סגור</button>
+        <button type="button" id="save__btn" class="click__btn" onclick="addNewLink()">שמור</button>
+    </section>
+</article>
+<div id="loader"></div>

@@ -1,0 +1,1736 @@
+@font-face {
+    font-family: 'Assistant';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/AssistantByGoogle/Assistant-VariableFont_wght.ttf');
+  }
+/*==================================*/
+/*  SharePoint Fixes for bootstrap  */
+/*==================================*/
+#s4-workspace{
+    overflow-x: hidden;/* Hide x Scroll*/
+    /* max-height:100%; */
+    overflow-y: auto; 
+    padding:0;
+    margin:0;
+}
+
+#s4-bodyContainer{      
+    padding-bottom: 0px;
+    height: 100%;
+}
+#DeltaPlaceHolderMain{
+    height: 100%;
+}
+.ms-siteSettings-root{
+    position: absolute;
+    height:100%;
+    width:100%;
+    overflow-y: auto;
+}
+.nopadding{
+    padding: 0;
+
+}
+
+/*==================================*/
+/*  SharePoint class overwrite      */
+/*==================================*/
+.ms-dlgTitle{
+    background-color: #355e7e;
+    color: #ffffff !important;
+    font-weight: bold;
+    font-size: large;
+    /*-----*/
+    background-image:url('/_catalogs/masterpage/click/images/IT_logo.png');
+    background-position:right;
+    background-repeat:no-repeat;
+    background-size:contain;
+    
+    /*-----*/
+  }
+  .ms-sitemapdirectional
+  {
+     color:#355e7e;
+     font-weight:700; 
+     font-size: 28px;
+     font-family: Segoe UI Light;
+  }  
+  .ms-webpart-zone
+  {
+      padding:5px;
+  }
+  /**WP headers 1-no link 2 - with link on it **/
+  h2.ms-webpart-titleText{
+    color: rgb(59,213,181)!important;
+    font-size:1.2em!important;
+  }
+  .ms-webpart-titleText a nobr span{
+    color: rgb(59,213,181)!important;
+    font-size:1em!important;
+   
+  } 
+
+  
+  .ms-dlgTitle h1{ 
+    color: #ffffff;
+    font-weight: bold !important;
+  }
+
+  /* .ms-dlgBorder{
+      width: auto !important;
+  } */
+
+  #suiteBarTop{
+      display: none;
+  }
+
+  #RibbonContainer-TabRowRight{
+      display:none!important;
+  }
+/*----------------*/
+/*Images and Icons*/
+/*----------------*/
+*, *:before, *:after {
+    -webkit-box-sizing: content-box; /*border-box causes many issues with SP*/
+    -moz-box-sizing: content-box; /*border-box causes many issues with SP*/
+    box-sizing: content-box; /*border-box causes many issues with SP*/
+    }
+    * [class^="col"], * [class^="col"]:before, * [class^="col"]:after {
+    -webkit-box-sizing: border-box; /*re-enable border-box for framework spans*/
+    -moz-box-sizing: border-box; /*re-enable border-box for framework spans*/
+    box-sizing: border-box; /*re-enable border-box for framework spans*/
+    }
+    img {
+    max-width: none;
+    width: auto;
+    }
+    /* * [class^="col"] img { */
+    /*max-width: 100%;*/ /*for images inside span grid*/
+    /* } */
+    #scriptWPQ2 img, img.ms-webpart-menuArrowImg, #applist img {
+    /*within a span may still need to have width of image not 100% for SP2013 OOTB features/imges*/
+    width: auto;
+    max-width: none;
+    }
+    .ms-siteactions-imgspan {
+    float: none;
+    margin: 0px;
+    }
+    
+    
+    /*---------------------------------------*/
+    /*Ribbon Spans and Ribbon Drop-Down Menus*/
+    /*---------------------------------------*/
+    #s4-ribbonrow [class*="col"] {
+    float: none;
+    margin-left: 0px;
+    font-size: 2em;
+    font-weight: 1.2em;
+    }
+    input.ms-cui-cb-input {
+    height: 14px;
+    padding: 3px 7px 2px;
+    }
+    
+    /*---------------------------------------------*/
+    /*Stop Fluid Behavior for Extra Large Viewports*/
+    /*---------------------------------------------*/
+    @media (min-width: 1200px) {
+        header > .container-fluid, nav#topnav > .container-fluid, footer > .container-fluid,
+        .footer-bottom > .container-fluid {
+        max-width:inherit; /*1160px;*/
+        margin-left: auto;
+        margin-right: auto;
+        }
+        #main {
+        max-width: 1560px;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .col-lg-4{
+            width:31%;
+        }
+    
+        .col-lg-8{
+            width:65%;
+        }
+    }
+    
+    /*---------------*/
+    /*Rotating Images*/
+    /*---------------*/
+    .theme-nivo-specter .nivoSlider img {
+    height: 100% !important;
+    }
+    
+    /*------------------*/
+    /*Misplaced Elements*/
+    /*------------------*/
+    header > .container-fluid {
+    position: relative;
+    }
+    header .searchbox {
+    bottom: auto;
+    right: auto;
+    position: relative;
+    float: right;
+    margin-top: 60px;
+    text-align: left;
+    width: 260px;
+    }
+    header #searchInputBox input[type=text]{
+    box-shadow: none;
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+    }
+    
+    header .social {
+    right: 20px;
+    }
+    
+    
+    /*------------------------------------------------------*/
+    /*Not Enough Padding or Spacing Between Rows and Columns*/
+    /*------------------------------------------------------*/
+    footer {
+    padding-top: 10px;
+    }
+    footer .col-lg-4 col-md-4 h1, footer .col-lg-4 col-md-4 h2, footer .col-lg-4 col-md-4 h3, footer .col-lg-4 col-md-4 h4,
+    footer .col-lg-4 col-md-4 h5, footer .col-lg-4 col-md-4 h6 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    padding-top: 0;
+    text-align: center;
+    }
+    footer .footer-bottom .container-fluid {
+    padding: 15px 20px;
+    }
+    footer .footer-bottom p, footer .footer-bottom li {
+    font-size: 13px;
+    }
+    footer .footer-bottom .copyright, footer .footer-bottom .sitemap {
+    min-height: 0px;
+    }
+    footer .footer-bottom .sitemap {
+    text-align: right;
+    }
+    
+    
+    /*------------------------------*/
+    /*Smaller Viewport Layouts Break*/
+    /*------------------------------*/
+    @media (max-width: 979px) {
+        header #logo {
+        width: 50%;
+        }
+        header #logo img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        }
+        header .tagline h2 {
+        font-size: 20px;
+        }
+        header .searchbox {
+        margin: 10px 1% 10px;    
+        width: 98%;
+        }
+        header #searchInputBox input[type="text"] {
+        width: 90%;
+        }
+    }
+    @media (max-width: 767px) {
+        header #logo img {
+        margin: 10px 0px 0px 5px;
+        }
+        header .tagline h2 {
+        font-size: 16px;
+        }
+        header .searchbox {
+        margin: 10px 1% 10px;
+        float: left;
+        width: 98%;
+        }
+        header #searchInputBox input[type="text"] {
+        width: 80%;
+        }
+        header .searchbox a {
+        float: right;
+        margin-right: 2%;
+        }
+        header .social {
+        right: 1%;
+        }
+    }
+    @media (max-width: 479px) {
+        header .tagline {
+        background: transparent none;
+        display: block;
+        margin: 5px 10px;
+        min-height: 0px;
+        padding: 0px;
+        vertical-align: top;
+        }
+        header .tagline h2 {
+        font-size: 16px;
+        }
+    }
+    @media (max-width: 479px) {
+    header .tagline {
+    display: none;
+    }
+    }
+    
+/*=========================================*/
+/*  End of SharePoint Fixes for bootstrap  */
+/*=========================================*/
+
+/**/
+.AccInfoLeftCol{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+/*  Main Area   */
+.Main, .MainPlaceHolder, .MainRow{
+    height: 100%;	
+}
+
+
+.MainArea{
+    background-color:rgb(255,255,255);
+    /*position:relative; */
+    padding-left: 30px;
+    padding-right: 110px;
+    /*margin-right: 100px;*/
+    height: 100%;
+}
+
+.pmoContent{
+    align-items: center;
+    direction: rtl;
+    text-align: right;
+    overflow-x: hidden;
+    overflow-y:auto;
+    height: 90%;
+    margin-right: 5px;
+}
+/*  End of Main Area   */
+
+/*  SideBar Navigation*/
+#mySidebar{
+    position: fixed;
+    top: 35px;
+}
+
+.SideNav{
+    background-color:rgb(53,94,126); 
+    cursor:pointer !important;
+    text-align:center;
+    padding: 0;
+    display: block;
+    height: 100%;
+    position: fixed;
+    right:0;
+    z-index: 1;
+    width: 90px;
+}
+
+.boldText{
+    font-weight: bolder;
+    margin-right:10px;
+}
+
+.closebtn{
+    color:white;
+    display:block;
+    position: relative !important;
+    font-size: 25px;
+    width: 97%;
+}
+
+.changeColor:hover > .closebtn{
+    color:rgb(59,213,181);
+}
+/*End of SideBar Navigation */
+
+/*  Footer Navigation*/
+.pmoFooter{
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-right: 120px;
+}
+
+.FooterNav{
+    background-color:#e7e9ee;
+   /* display:flex;     */
+}
+/*End of Footer Navigation */
+
+.breadCrumb{
+    font-size: 10px;
+    vertical-align: bottom;
+}
+
+.pmoMyFavoriteText{
+    cursor: pointer !important;
+    font-size: 13.5px;
+    color: rgb(53,94,126);
+    font-weight: bolder;
+    width:100%;
+    text-align: center;
+}
+
+.myFavorite{
+    padding: 10px;
+}
+
+.footerFav{
+    padding: 0;
+}
+.pmoFavorite:hover, .pmoFavoriteText:hover{
+    cursor: pointer !important;
+}
+
+.AddToFavBtn, .ItIconsContainer{ 
+    position: relative;
+}
+
+.AddToFavBtn{
+    margin-top: 1%;
+}
+
+.pmoSiteLogo{
+    height: 10%;
+    position: relative;
+    padding-top: 15px;
+    padding-right: 15%;
+}
+
+.pmoSiteLogo:hover{
+    cursor: pointer;
+}
+
+.pmoSiteLogo a{
+    display: block;
+}
+
+.pmoSiteLogo img{
+    display: block;
+   /* max-width: 98%;*/
+}
+
+.col-lg-1 {
+		/*max-width: 7%;*/
+        flex:0 0 4.333333%;
+}
+
+.QuickLaunchContainer, .Counter{
+    height: 45%;
+}
+
+.QuickLaunchContainer img{
+    display: block;
+    margin: auto;	
+}
+
+.quickLaunchNode{
+    height: 20%; /*4 Node 100/4=25*/
+	cursor:pointer !important;	
+}
+
+.quickLaunchNode:hover{
+    background-color: #1C4B6B;
+	cursor:pointer !important;	
+}
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    /* position: absolute; */
+    /* initial;/*fixed;*/
+    z-index: 100;
+    top: 0;
+    /*left: 0;*/
+    right:86px;
+    background-color: #1C4B6B;
+    overflow-x: hidden;
+    transition: 0.5s;
+    /*padding-top: 60px;*/
+  }
+
+  .closebtn{
+      margin-left: 10px;
+  }
+
+.sideNavText{ 
+    color:#ffffff; 
+    font-size: 15px !important;
+    border-right: 2px solid rgb(59,213,181);
+    font-weight:normal;
+}
+
+.sideSubNavText{
+    border-right: 2px solid rgb(139,107,253);
+}
+
+.sideSubNavText > a{
+    color:#ffffff; 
+    font-size: 15px;        
+}
+
+.sideSubNavText > a:hover { 
+    background-color: rgb(53,94,126);
+}
+
+.SearchDiv{
+    text-align:right;
+    min-width: 250px;
+    background-color: rgb(28,75,107);
+    z-index: 1;
+    height: 100%;
+    margin-right:90%;
+    bottom:-0px;
+}
+
+.pmoNavSiteMenu{
+    text-align:right;
+    min-width: 250px;
+    background-color: rgb(28,75,107);
+    z-index: 1;
+    height: 100%;
+    margin-right:90%;
+    bottom:-0px;
+}
+
+#sideNavBox1{
+    margin-top: 90px;
+}
+
+.sideNavText{
+    font-size: 20px;
+    color: white;
+}
+
+.SearchBox{
+    top: 19%;
+    height: 6%;
+    padding-right: 0;
+    background-color: rgb(53,94,126);
+    border-right: 4px solid rgb(59,213,181);
+    min-width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#Roundbutton{
+    border-radius: 50% / 80%;
+    font-size: 13px;
+    height: 20px;
+    border: 0;
+    background-color: white;
+    color: rgb(28,75,107);
+    min-width: 50px;
+    padding: 0px;
+}
+    
+.Roundbutton:hover{
+    background-color: white;
+    border: 0;
+}
+/* 
+#search-input {
+    height: 100%;
+    font-size: 15px;
+    color:rgb(59,213,181);
+    background-color: rgb(53,94,126);
+    border: 0;
+} */
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+/* #search-submit {
+    height:100%;
+    text-align:center;
+    font-size: 15px;
+    color:rgb(59,213,181);
+    cursor: pointer !important;
+    line-height:35px;
+} */
+
+::placeholder {
+    color: white;
+}
+
+.openLevel2{
+    height: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.openLevel2 > img{
+    width: 20px;
+    height: auto;
+    margin-right: 69px;
+}
+
+.openLevel2:hover > div,
+.openLevel2 > div:hover{
+    position:absolute;
+    display: block;
+}
+
+.openLevel2 .pmoNavSiteMenu,
+.openLevel2 .SearchDiv {
+    display: none;
+}
+
+.ContentPlaceHolderMain{
+    height: 100%;
+}
+
+.openLevel2:hover{
+    background-color: rgb(28,75,107);
+}
+
+.h3, h3 {
+    font-size: 1.15em;
+}
+
+.space{
+    height: 6%;
+}
+
+.ms-siteicon-img{
+    width: 50px;
+    height: auto;
+}
+
+/*================================*/
+/*  Interactive Cubes : Reminders */
+/*================================*/
+.webPartContainerTopRight, .webPartContainerBottomRight{
+    /*margin : 15px;*/
+}
+
+.interactiveCube{
+    height:178px; 
+    width:378px;
+    margin: 0 0 20px 20px;
+    float: right;
+    border-radius: 10px;
+}
+
+.interactiveCubeInnerRight{
+    height:100%; 
+    width:30%; 
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    float: right;
+}
+
+.interactiveCubeInnerLeft{
+    height:100%; 
+    width:70%;
+    float: right;
+}
+
+.interactiveCubeInnerLeft p{
+    padding-right: 10px;
+}
+
+.interactiveCubeInnerPersonal{
+    background-color:#3bd5b5; 
+    background-image: linear-gradient(#3bd5b5, #1ac29e);
+}
+
+.interactiveCubeInnerUnit{
+    background-color:#8b6bfd; 
+    background-image: linear-gradient( #b890fe, #8b6bfd);
+}
+
+.interactiveCubePersonalTitle{
+    color:#3bd5b5 !important;
+}
+
+.interactiveCubeUnitTitle{
+    color:#8b6bfd !important;
+}
+
+.currentUser{
+    color: #000000 !important;
+}
+
+.interactiveCubePersonal{
+    background-color:#3bd5b5;
+}
+
+.interactiveCubeUnit{
+    background-color:#8b6bfd;
+}
+ 
+
+/*==========================*/
+/*  Events-Tasks-Docs Nav   */
+/*==========================*/
+
+/* width and height */
+::-webkit-scrollbar {
+    width: 5px;
+    height:10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(207, 209, 221); 
+    border-radius: 50px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:rgb(53,94,126); 
+    border-radius: 50px;
+  }
+
+
+.myTasks{
+    background-color:rgb(231,233,248);
+    text-align: right;
+    position: absolute;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    direction: rtl;
+    padding: 0px;
+}
+
+.ms-rtestate-field{
+    height: 100%;
+}
+
+#docs, .myTasksRow, #tasks, #events{
+    margin: 0 5px 0 5px;
+}
+
+#docs{
+    direction: rtl;
+}
+
+.myTasksRow{
+    margin-top: 10px;
+    align-items: center;
+    color: white;
+    background-color:rgb(53,94,126); 
+}
+
+.title{
+    font-size: 20px;
+}
+
+.aTextMyTasks{
+    text-decoration: none;    
+    color: rgb(53,94,126);
+    text-align: left;
+    font-size: smaller;
+}
+
+.aTextMyTasks:hover{
+    color: rgb(53,94,126);
+    cursor: pointer !important;
+}
+
+.aTextMyTasks:visited{
+    color: rgb(53,94,126);
+    cursor: pointer !important;
+}
+
+.aText:visited{
+    color: white;
+}
+
+.aText{
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+    text-align: left;
+}
+
+.boldDaysText{
+    font-weight: bolder;
+}
+
+.green{
+    background-color: rgb(139, 193, 79);
+}
+
+.yellow{
+    background-color: rgb(246, 187, 67);
+}
+
+.blue{
+    background-color:rgb(53,94,126);
+}
+
+.red{
+    background-color: rgb(237, 84, 99);
+}
+
+.groupText{
+    color: rgb(28,75,107);
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.taskContentText{
+    margin-bottom: 5px;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    direction: rtl;
+    border: 1px solid #c9c9c9;
+    box-shadow: 0 0 5px #c9c9c9;
+    -webkit-box-shadow: 0 0 5px #c9c9c9;
+}
+
+.docContentText{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.docDetailsContainer{
+    display: flex;
+    align-items: center;
+}
+
+.spaceRow{
+    padding-bottom: 10px;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.collapsible::before {
+    content: '+';
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+
+.active::before {
+    content: "-";
+    font-size: 20px;
+    color: white;
+    float: right;
+}
+
+.ms-dlgTitle {
+    text-align: right;
+}
+
+#dialogTitleSpan{
+    font-weight: 100;
+    font-size: 18.98px;
+}
+
+.pointer {
+    cursor: pointer !important;
+}
+
+.elegant-calencar {
+    text-align: center;
+    position: relative;
+    direction: rtl;
+}
+
+#header {
+    /* font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif; */
+    font-family: Assistant;
+    height: 14em;
+    background-color: #2a3246;
+    margin-bottom: 1em;
+
+}
+
+.pre-button, .next-button {
+    font-size: smaller;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    cursor: pointer !important;
+    line-height: 1em;
+    width: 10px;
+    color: rgb(53,94,126);
+    border-radius: 50%;
+}
+
+.pre-button {
+    float: left;
+}
+
+.next-button {
+    float: right;
+}
+
+.head-info {
+    float: left;
+}
+
+/* .head-day {
+    font-size: smaller;
+    line-height: 1;
+    color: rgb(53,94,126);
+} */
+
+.head-month {
+    font-size: smaller;
+    line-height: 1;
+    color: rgb(53,94,126);
+}
+
+#calendar {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.boderUnderPersonal{
+    border-bottom: 3px solid  #3bd5b5;
+    font-weight: bolder;
+}
+
+.boderUnderUnit{
+    border-bottom: 3px solid  #8b6bfd;
+    font-weight: bolder;
+}
+
+.boderUnderPersonalAndUnit{
+    border-bottom: 3px solid rgb(246, 187, 67);
+    font-weight: bolder;
+}
+
+#calendar tr {
+    height: 2em;
+    line-height: 2em;
+}
+
+.pmoTableCalanderHeader tr {
+    color: rgb(53,94,126);
+    font-weight: 700;
+}
+
+.pmoTableCalanderBody tr {
+    color:  rgb(53,94,126);
+}
+
+.pmoTableCalanderBody td{
+    width: 14%;
+    border-radius: 50%;
+    cursor: pointer !important;
+    -webkit-transition:all 0.2s ease-in;
+    transition:all 0.2s ease-in;
+}
+
+.pmoTableCalanderBody td:hover, .selected {
+    color: #fff;
+    background-color:  rgb(53,94,126);
+    border: none;
+}
+
+.pmoTableCalanderBody td:active {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+#today {
+    color:  rgb(246, 187, 67);
+    /* font-family: serif; */
+    font-family: Assistant;
+    border-radius: 50%;
+}
+
+#disabled {
+    cursor: default !important;
+    background: rgb(231,233,248);
+}
+
+#disabled:hover {
+    background: rgb(231,233,248);
+    color: #c9c9c9;
+}
+
+/* #reset {
+    right: 1.5em;
+    top: 0.5em;
+    z-index: 999;
+    color: #fff;
+    font-family: serif;
+    cursor: pointer;
+    padding: 0 0.5em;
+    border: 0.1em solid #fff;
+    border-radius: 4px;
+}
+
+#reset:hover {
+    color: rgb(53,94,126);
+    border-color: rgb(53,94,126);
+}
+
+#reset:active{
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);     
+} */
+
+/*==================*/
+/*  SiteMap Tree    */
+/*==================*/
+ul, #myUL {
+    list-style-type: none;
+  }
+  
+  #myUL {
+    margin: 0;
+    padding: 0;
+  }
+  
+.rightBorder{
+    border-right: 2px solid rgb(59,213,181);
+}
+
+  .caret {
+    margin-bottom: 10px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari 3.1+ */
+    -moz-user-select: none; /* Firefox 2+ */
+    -ms-user-select: none; /* IE 10+ */
+    user-select: none;
+  }
+  
+  .caret::before {
+    content: "\25B6";
+    color: white;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  
+  .caret-down::before {
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari */
+    transform: rotate(90deg);  
+  }
+  
+  .nested {
+    display: none;
+    margin-right: 16.5px;
+    padding-right: 15px;
+    margin-bottom: 10px;
+  }
+
+  .NotHaveChild {
+    border-right: 2px solid rgb(139,107,253);
+    margin-right: 16.5px;
+    padding-right: 10px;
+  }
+
+  .ParentNotHaveChild{
+    border-right: 2px solid rgb(139,107,253);
+  }
+  
+  .ulActive {
+    display: block;
+  }
+
+  .aTextSiteMap:visited, .aTextSiteMap:hover{
+    color: white;
+}
+
+.aTextSiteMap{
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+}
+
+.textSiteMap{
+    font-size: 15px;
+    color: white;
+}
+
+
+/*==================*/
+/*  SearchBox       */
+/*==================*/
+/* * {box-sizing: border-box;} */
+
+body {
+  margin: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-family: Assistant;
+}
+
+.searchContainer {
+  overflow: hidden;
+  background-color: #e9e9e9;
+}
+
+.searchContainer a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.searchContainer a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.searchContainer a.pageActive {
+  background-color: #2196F3;
+  color: white;
+}
+
+.searchContainer .search-container {
+  float: right;
+}
+
+.searchContainer input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.searchContainer .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.searchContainer .search-container button:hover {
+  background: #ccc;
+}
+
+@media screen and (max-width: 600px) {
+  .searchContainer .search-container {
+    float: none;
+  }
+  .searchContainer a, .searchContainer input[type=text], .searchContainer .search-container button {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .searchContainer input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+#inptxtSearchBox{
+    color: white !important;
+    background-color: #1C4B6B;
+    padding-top: 7px;
+    width: 210px;
+    font-weight: normal;
+}
+
+#searchButton{
+    color: white !important;
+    background-color: #1C4B6B;
+    padding-bottom: 20px;
+    font-size: 5px;
+    width: 20px;
+    height: auto
+}
+
+.searchBox-container{
+    color: white !important;
+    border-radius: 20px !important;
+    background-color: #1C4B6B;
+    border: white 1px solid;
+    width: 350px !important;
+    height: 35px;
+}
+
+/*Search*/
+h1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    /*text-shadow: 2px 2px navy;*/
+}
+
+/*input[type="text"] {
+    width: 200px;
+}*/
+
+/*drop-down max width fix*/
+select{
+   /* max-width:75%*/
+}
+
+fieldset {
+    width: 98%;
+    margin-bottom: 10px;
+}
+
+.fldHeadersH3 {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    color: rgb(59,213,181);
+}
+
+.btnGetAllLists {
+    background-color: darkgreen;
+    color: white;
+}
+
+.fldContainer-12 {
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+.fldContainer-9 {
+    width: 66%;
+    height: 100%;
+    float: right;
+    color: white;
+    margin-right: 10%;
+}
+
+.fldContainer-6 {
+    width: 50%;
+    height: 100%;
+    float: right;
+}
+
+.fldContainer-4 {
+    width: 25%;
+    height: 100%;
+    float: right;
+}
+
+.fldContainer-3 {
+    width: 33%;
+    height: 100%;
+    float: right;
+    color: white;
+}
+
+.fldContainer-2 {
+    width: 15%;
+    padding-right: 15px;
+    height: 100%;
+    float: right;
+    color: white;
+}
+
+.fldRow {
+    margin: 50px 0 10px 0;
+    color: white !important;
+}
+
+.leftbox {
+    float: left;
+}
+
+.middlebox {
+    float: left;
+}
+
+.rightbox {
+    float: right;
+}
+/*Search*/
+
+.topnav {
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav .search-container {
+    width: 100%;
+}
+
+.topnav .search-container .searchBox-container {
+    margin: 0 auto;
+    width: 70%;/*50%*/
+    --top-shadow: inset 1px 1px 3px #c5d4e3, inset 2px 2px 6px #c5d4e3;
+    --bottom-shadow: inset -2px -2px 4px rgba(255,255,255, .7);
+    
+    position: relative;
+    border-radius: var(--border-radius);
+    overflow: hidden;   
+}
+
+.searchBox-container{
+    margin-right: 62.5%;
+}
+
+.searchResults{
+    margin: 0 auto;
+}
+
+    
+.topnav input[type=text] {
+    /*padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;*/
+    border: none;
+    float: right;
+    width: 70%;
+    background-color: #e3edf7;
+    padding: 16px 32px;
+    border: none;
+    display: block;
+    /* font-family: 'Orbitron', sans-serif; */
+    font-family: Assistant;
+    font-weight: 600;
+    color: #a9b8c9;
+    -webkit-appearance: none;
+    transition: all 240ms ease-out;  
+}
+
+.topnav .search-container button {
+    float: right;
+    padding: 6px 10px;
+    /*margin-top: 8px;
+    margin-right: 16px;*/
+    background: #ddd;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 44px;
+}
+
+.topnav .search-container button:hover {
+    background: #ccc;
+}
+
+.spResult {
+    font-size: 13px; 
+    width: 650px;
+    padding: 5px 10px 5px 20px;
+    margin: 10px 0 10px -10px;
+    color: white;
+}
+
+.itemResultIcon{
+    width: 24px;
+    height: 24px;
+}
+
+.itemResultBody{
+    overflow: hidden;
+    display: inline-block;
+}
+
+.spResult:hover{
+    background-color: rgb(53,94,126);
+}
+
+.itemResultHoverPanelInnerContainer{
+    position:relative; 
+    margin: 0px;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay",opacity:"1")] */ background-color: #fff;
+    /* [ReplaceColor(themeColor: "DialogBorder")] */ border: 1px solid #d1d1d1;
+    padding: 0px;
+    box-shadow: 0px 1px 4px #cccccc;
+    display: inline-block;
+    width: 100%;
+}
+
+.itemResultHoverPanelInnerHeader{
+    padding: 0px 20px 0px 12px;
+    margin-top: 12px;
+}
+
+.itemResultHoverPanelInnerBody{
+    padding: 0px 20px 28px 20px;
+}
+
+.itemResultHoverPanelInnerBodyText{
+    color: #000000;
+    font-size: medium;
+}
+
+.itemR esultHoverPanelInnerActions{
+    /* [ReplaceColor(themeColor: "SubtleEmphasisBackground")] */ background: #f1f1f1; 
+    padding: 17px 20px 17px 20px;
+    overflow: hidden;
+}
+
+.ms-srch-hover-action
+{
+    padding-top: 3px;
+    padding-left: 22px;
+    float: right;
+}
+
+.result-hover-arrowBorder-rtl
+{
+    border-width: 15px;
+    border-style: solid;
+    /* [ReplaceColor(themeColor: "DialogBorder")] */ border-color: transparent transparent transparent #d1d1d1;
+    height: 0px;
+    width: 0px;
+    position: absolute;
+    right: -31px;
+    top:15%;
+}
+
+.result-hover-arrow-rtl
+{
+    border-width: 15px;
+    border-style: solid;
+    /* [ReplaceColor(themeColor: "BackgroundOverlay",opacity:"1")] */ border-color: transparent transparent transparent #fff;
+    height: 0px;
+    width: 0;
+    position:absolute;
+    right: -30px;
+    top:15%;
+}
+
+.result-hover-wacSize, .result-hover-standardSize{
+    /*width: 100%;*/
+    min-width: 450px;
+}
+.result-hover-viewerContainer{
+    height: 350px !important;
+}
+
+.result-hover-subTitle{
+    display: inline-block;
+    margin-left:5px ;
+}
+
+.result-hover-text{
+    display: inline-block;
+}
+
+
+.result-hover-viewer{
+    height: 100%;
+    width:100%;
+}
+
+.itemResultHoverPanel{
+    position: absolute;
+    z-index: 1001;
+    margin-right: 0px;
+}
+
+.itemResultIcon{
+    width: 16px;
+    height: 16px;
+}
+
+.itemResultIcon{
+    width: 16px;
+    height: 16px;
+}
+
+.titleBackColor{
+    background-color: rgb(59,213,181);
+    margin-top: 0;
+    height: 30px;
+}
+
+.fontHeadFooter{
+    font-family: Assistant !important;
+    font-weight: bold;
+}
+
+.itemResultSummary, .itemResultMetadata{
+    margin-right: 35px;
+    font-size: medium;
+    padding-top: 2px;
+    display: block;
+}
+
+.spResult a {
+    color: rgb(59,213,181);
+    font-size: large;
+    /* font-weight: bold; */
+}
+/*Pageination*/
+
+.pagination {
+    display: inline-block;
+    margin-top: 30px;
+}
+
+.pagination a {
+    color: white;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    /* border: 1px solid #ddd; */
+}
+
+.pagination a.pageActive {
+    /* background-color: #4CAF50; */
+    color: white;
+    text-decoration: underline rgb(59,213,181) solid 3px;
+}
+
+.pagination a:hover:not(.pageActive) {
+    /* background-color: #ddd; */
+}
+
+.pagination a:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.spResult-icon{
+    display: inline-block;
+    font-size: 1rem;
+    vertical-align: top;
+}
+
+.spResult-title{
+    display: inline-block;
+    margin-right: 10px;
+    max-width: 500px;
+}
+
+.resultTitle{
+    font-weight: bolder;
+    /* font-family: system-ui; */
+    font-family: Assistant;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size:large ;
+    color:rgb(59,213,181);
+}
+
+.titleResult:hover{
+    cursor: pointer;
+}
+
+/*refiners*/
+#searchResultsRef p a{
+    color:white;
+}
+
+
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 300px;
+    background-color:#e7e9ee;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: 100%;
+    margin-left: -80px;
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #e7e9ee transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 100px;
+    height: 100px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid  rgb(53,94,126);
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+    display: none;
+  }
+
+  #loader1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+    border: 17px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 17px solid rgb(53,94,126);
+    display: none;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  /*connected items fix*/
+  #MSOZoneCell_WebPartctl00_ctl37_g_6e74e135_5960_4ed9_b282_95aefc1647da{
+      width:90%;
+    
+  }
+
+  .ms-dlgBorder{
+    width: 100% !important;
+}
+
+/*do not print navigation elements (when printing)*/
+@media print
+{    
+    .pmoFooter, .breadCrumb, .SideNav, .no-print, .no-print *
+    {
+        display: none !important;
+        padding-right: 30px;
+    }
+    .MainArea
+    {
+        padding-right: 30px !important;
+    }
+    .pmoContent{
+        height: 100% !important;
+       
+    }
+}
+
+/* .tableWithBorder{
+    border-radius: 10px;
+    border: 4px solid rgb(53,94,126);
+}
+
+.tableWithoutBorder{
+    border-radius: 10px;
+    border: 1px solid white;
+} */
+/*AUTOCOMPLETE*/
+/*.autocomplete {
+    position: relative;
+    display: inline-block;
+  }
+  
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff; 
+    border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:
+  .autocomplete-items div:hover {
+    background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:
+  .autocomplete-active {
+    background-color: DodgerBlue !important; 
+    color: #ffffff; 
+  }*/
+
+  .ms-dlgContent{
+      width: 800px !important;
+  }
+  .ms-dlgFrame{
+      width: 100% !important;
+  }
+  
+  li.dfwp-item{
+    width:40%;
+    float:right;
+}
+.groupheader{
+    padding-right:100px;
+}

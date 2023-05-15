@@ -1,0 +1,54 @@
+.form__fields__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.form_typeContainer {
+    justify-content: normal !important;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 1rem;
+}
+
+.form_linkContainer {
+    justify-content: normal !important;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 1rem;
+}
+
+.form__btn {
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.form__rowSpace {
+    margin: 10px 20px;
+}
+
+.form__select {
+    background-color: #355e7e !important;
+    color: #ffffff !important;
+    font-weight: 500;
+    width: 100%;
+    border: none !important;
+    padding: 15px;
+}
+
+.form__select option {
+    padding: 1rem !important;
+}
+
+select.form__select option:hover {
+    color: #355e7e;
+    background-color: #ffffff;
+}
+
+.form__input {
+    width: 100%;
+    background-color: #edf0f9 !important;
+    border: none !important;
+    color: rgb(53, 94, 126) !important;
+    padding: 15px !important;
+}

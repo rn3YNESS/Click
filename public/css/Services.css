@@ -1,0 +1,36 @@
+﻿.Mainp{
+    position:relative;
+    padding-bottom: 0px;
+    text-align: right;
+}
+.pmoNavimg{
+    height:70px;
+    width:auto;
+    margin:10%;
+
+}
+.pmoUL{
+    list-style-type:circle;
+    color:rgb(59,213,181);
+    line-height:150%;
+}
+.pmoUlHead{
+    color:rgb(59,213,181);
+    margin-right:7%;
+    font-weight: bold;
+}
+.pmoLi{
+    font-size: small;
+ }
+.pmoLink:link, .pmoLink:visited {
+    color:rgb(255, 255, 255);
+  }
+.pmoLink:hover{
+   
+   color:rgb(139,107,253);
+   text-decoration: underline;
+}
+.pmoLink:link:active, .pmoLink:visited:active {
+   color:rgb(59,213,181);
+   
+}

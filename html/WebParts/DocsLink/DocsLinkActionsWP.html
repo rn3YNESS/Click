@@ -1,0 +1,24 @@
+<div class="DocsLinkArea">
+    <h3 id="DocLinkTitle">קישור פריט חדש</h3>
+    <div class="row" style="height: 85%;">
+        <div class="col-lg-6 col-md-6 col-sm-6" style="text-align: center;">
+            <select id="allWebs" class="selectWebAndItems"
+                onchange="PMOClickDocsLink.Methods.DrawAllLibrarys(this.options[this.selectedIndex].id)">
+                <option>בחרו אתר מהרשימה</option>
+            </select>
+            <ul id="allDocLibsPerWeb" style="text-align: right; height: 91%; overflow-y: auto; overflow-x: hidden; padding-right: 10px; width: 95%; position: absolute;">
+            </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-6" id="libsDiv" style="text-align: center; display: none;">
+            <div class="autocomplete selectWebAndItems">
+                <input id="AutocompleteInput" placeholder="חפש..." type="text">
+            </div>
+            <!-- <button type="button" onclick="PMOClickDocsLink.Methods.LinkItem()">
+                קשר מסמך
+            </button> -->
+            <ul id="allDocs" style="text-align: right; height: 91%; overflow-y: auto; overflow-x: hidden; position: absolute; width: 90%; padding-right: 0px;">
+            </ul>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,60 @@
+.navGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    background-color: #1C4B6B;
+    color: white;
+    padding: 20px 0px;
+font-family: Assistant;
+}
+
+.iconDiv img {
+    height: 80px;
+}
+
+.iconDiv {
+    margin: 20px;
+    padding-right: 20px;
+}
+
+.catDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.itmDiv {
+    display: flex;
+    flex-direction: row;
+    padding-right: 5px;
+    font-size: 0.8rem;
+}
+
+.bullet {
+    margin: 0px 8px;
+}
+
+.indented {
+    margin-right: 20px;
+    font-size: 0.9em;
+}
+
+.catTitle {
+    font-weight: bold;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.itmA:hover {
+    font-weight: bold;
+    text-decoration: none;
+}
+.closeButtonDiv {
+    text-align: left;
+    background-color: #1C4B6B;
+}
+.newItem{
+    color: yellow;
+    font-size: 0.8em;
+    font-weight: bold;
+    vertical-align: super;
+
+}

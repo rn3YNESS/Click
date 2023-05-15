@@ -1,0 +1,206 @@
+<style>
+  #s4-workspace {
+    overflow: hidden;
+    /* Hide x Scroll*/
+    font-family: Assistant;
+  }
+
+  #ms-designer-ribbon{
+    display: none;
+  }
+
+  .formBody {
+    color: rgb(53, 94, 126) !important;
+    /*cancel grid.css -15px*/
+  }
+
+  .linkType {
+    font-size: large;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Assistant;
+  }
+
+  .previewContainer {
+    margin: 30px 0 15px 0;
+  }
+
+  .buttonsContainer {
+    text-align: left;
+    position: fixed !important;
+    bottom: 0;    
+  }
+
+  .cancelButton {
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+    background-color: rgb(53, 94, 126);
+    border: none !important;
+  }
+
+  .addButton {
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+    background-color: #3bd5b5;
+    border: none !important;
+  }
+
+  .btnShowPreview{
+    font-weight: bold;
+    font-size: large;
+    color: #ffffff;
+    background-color: rgb(53, 94, 126);
+    border: none !important;
+  }
+
+  .btnShowPreview:hover, .cancelButton:hover{
+    background-color: rgb(53, 94, 126);
+  }
+
+  button:hover,
+  .imgDeleteFav,
+  .imgUpdateFav {
+    cursor: pointer;
+  }
+
+  /*  HTML Elements */
+  input,
+  select {
+    width: 100%;
+    background-color: #edf0f9 !important;
+    border: none !important;
+    color: rgb(53, 94, 126) !important;
+    padding: 15px !important;
+  }
+
+  label {
+    font-weight: bold;
+    font-size: larger;
+    display: inline !important;
+  }
+
+  /*  Placeholder */
+  ::placeholder {
+    color: rgb(53, 94, 126) !important;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(53, 94, 126) !important;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(53, 94, 126) !important;
+  }
+
+  .formType{
+    width: 33% !important;    
+  }
+
+  .formType label{    
+    font-size: medium !important;
+  }
+
+  .FormPreview {
+    margin-top: 20px;
+  }
+
+  .typeContainer, .displayNameContainer, .urlContainer{
+    margin: 10px 0 10px 0;
+  }
+
+  #favIndexUpdate{
+    display: none;
+  }
+
+  .pmoFavoriteText{
+    cursor: pointer !important;
+    font-size: 13.5px;
+    color: rgb(53,94,126);
+    font-weight: bolder;
+    width:100%;
+    text-align: center;
+}
+
+.noteSixFav{
+    font-size: 20px;
+    color: rgb(53,94,126);
+    font-weight: bolder;
+    width:100%;
+}
+</style>
+<link href="/_catalogs/masterpage/click/css/bootstrapV4/bootstrap.min.css" rel="stylesheet" />
+
+<div class="row formBody" id="formBody">
+  <div class="col-lg-12">
+    <!-- Notification Area  -->
+    <div dir="rtl" class="row" id="notification" style="display:none;">
+      <div class="alert alert-warning alert-dismissible fade show" role="alert" style="padding-left:15em;padding-right:0.5em;">
+        <strong>לידיעתך: </strong>ניתן להוסיף עד 6 מועדפים
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="left:0;right:auto;min-width:1em;" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+    <!-- Form Area  -->
+      <div class="col-lg-12">
+        <!--  Type  -->
+        <div class="row typeContainer">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <label>סוג</label></br>
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-4 formType">
+                <input class="disAddFav" style="width: auto;" type="radio" id="doc" name="fType" value="doc">
+                <label for="doc">מסמך<img alt='AddToFavorite' src='/_catalogs/masterpage/click/images/fileIcon.png' /></label><br>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-4 formType">
+                <input class="disAddFav" style="width: auto;" type="radio" id="page" name="fType" value="page">
+                <label for="page">דף <img alt='AddToFavorite' src='/_catalogs/masterpage/click/images/pageIcon.png' /></label><br>
+              </div>                  
+              <div class="col-lg-4 col-md-4 col-sm-4 formType">
+                <input class="disAddFav" style="width: auto;" type="radio" id="form" name="fType" value="form">
+                <label for="form">טופס<img alt='AddToFavorite' src='/_catalogs/masterpage/click/images/formsIcon.png' /></label>
+              </div>                  
+            </div>
+          </div>
+        </div>
+        <!--  DisplayName -->
+        <div class="row displayNameContainer">
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <label>כותרת(שם תצוגה)</label></br>
+            <input class="favField disAddFav" type="text" id="favName" textlName="textName" placeholder="הזן בבקשה שם..." />
+          </div>
+        </div>
+        <!--  Url -->
+        <div class="row urlContainer">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <label>כתובת</label></br>
+            <input class="favField disAddFav" type="text" id="favUrl" urlName="urlName" placeholder="הזן בבקשה את הכתובת למקור התוכן..." />
+          </div>
+        </div>
+        <input class="favField" type="text" id="favIndexUpdate"/>
+        <!--  Preview -->
+        <div class="row previewContainer">
+          <div class="col-lg-12 col-md-12 col-sm-12">            
+            <button onclick="PMOClickAddToFavorite.Methods.ShowPreview()" type="button" class="btnShowPreview disAddFav">הוסף/עדכן מועדף</button>
+            <div class="FormPreview row"></div>
+          </div>
+        </div>
+        <!--  Buttons -->
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12 buttonsContainer">
+            <button type="button" class="cancelButton" onclick="PMOClick.Methods.CloseDialog(0,null)">בטל</button>
+            <button type="button" class="addButton" onclick="PMOClickAddToFavorite.Methods.AddToFavorite(0)">שמור</button>
+          </div>
+        </div>
+
+      </div>
+
+  </div>
+</div>
+<div class="row">
+<div class="col-lg-12" id="loader"></div></div>

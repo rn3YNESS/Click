@@ -1,0 +1,202 @@
+<style>
+    body {
+        font-family: Assistant;
+    }
+
+    label{
+        width: 100%;
+    }
+    fieldset {
+        background-color: #eeeeee;
+    }
+
+    legend {
+        background-color: gray;
+        color: white;
+        padding: 5px 10px;
+    }
+    
+    .customRow{
+        margin: 7px;
+    }
+
+    input[type=text]{
+        color: #1c4b6b;
+        border-radius: 3px;
+    }
+select{
+    width: 50%;
+    line-height: 36px;
+}
+</style>
+
+<!--    Row 1   -->
+<div class="row customRow">
+    <div class="col-lg-12">
+        <div style="background-color: #5a3979; line-height: 36px; padding: 5px;">
+            <label style="font-size: 24px; font-weight: 400; color:white;">כתובת אתר : </label>
+            <select type="text" id="txtSiteUrl" style="width: 80%; font-weight: 400;"></select>
+        </div>
+    </div>
+</div>
+<!--    Seperator   -->
+<!--    Automate Process   -->
+<div class="row customRow">
+    <div class="col-lg-12">
+        <div style="background-color: #c29ae7; line-height: 36px; padding: 5px;">
+            <label style="font-size: 24px; font-weight: 400; color:white;">התחל תהליך אוטומטי רק לאחר בחירת אוסף אתרים</label>
+            <button type="button" onclick="PMOClickMng.Methods.StartAutomationProcess()">התחל יצירת רכיבים באופן אוטומטי</button>
+        </div>
+    </div>
+</div>
+<!--    Seperator   -->
+
+</br>
+<hr>
+<!--    Row 1   -->
+<div class="row customRow">
+    <div class="col-lg-12">
+        <fieldset>
+            <legend style="background-color: #355e7e;">יצירת עמודות אתר</legend>
+            <div class="row customRow">
+                <!-- Field Type -->
+                <div class="col-lg-4">
+                    <label>סוג עמודה : </label>
+                    <select id="selFieldType">
+                        <option value="Text">שורת טקסט בודדת</option>
+                        <option value="Number">מספר</option>
+                        <option value="Choice" >אפשרויות</option>
+                        <option value="Boolean">כן/לא</option>
+                    </select>
+                </div>
+                <!-- Field InternalName -->
+                <div class="col-lg-4">
+                    <label>שם מקור (Internal Name) : </label>
+                    <input type="text" id="txtInternalName" placeholder="שם עמודה..." />
+                </div>
+                <!-- Field DisplayName -->
+                <div class="col-lg-4">
+                    <label>שם תצוגה : </label>
+                    <input type="text" id="txtDisplayName" placeholder="שם תצוגה..." />
+                </div>
+            </div>
+            <div class="row customRow">
+                <!-- Field Required -->
+                <div class="col-lg-4">
+                    <label>שדה חובה? כן/לא</label>
+                    <input type="radio" class="txtRequired" name="radioIsRequired" value="Yes" onclick="PMOClickMng.Methods.IsFieldReq('TRUE')" />
+                    <label for="Yes" style="width: 30%;">כן</label>
+                    <input type="radio" class="txtRequired" name="radioIsRequired" value="No" onclick="PMOClickMng.Methods.IsFieldReq('FALSE')" />
+                    <label for="No" style="width: 30%;">לא</label>
+                </div>
+                <!-- Field Group -->
+                <div class="col-lg-4">
+                    <label>שם קבוצה (שיוך עמודה לקבוצה) : </label>
+                    <input type="text" id="txtGroup" />
+                </div>
+                <div class="col-lg-4">
+                    <button type="button" onclick="PMOClickMng.Methods.CreateSiteColumn()">צור עמודת אתר</button>
+                </div>
+            </div>
+        </fieldset>
+
+    </div>
+</div>
+<!--    Seperator   -->
+</br>
+<hr>
+<!--    Row 2   -->
+<div class="row customRow">
+    <div class="col-lg-12">
+        <fieldset>
+            <legend style="background-color: #3bd5b5;">יצירת סוגי תוכן וקישור עמודות אתר לסוג תוכן</legend>
+            <div class="row customRow">
+                <!-- Content Type Group -->
+                <div class="col-lg-4">
+                    <label>שיוך סוג תוכן לקבוצה : </label>
+                    <input type="text" id="txtInternalNameGroup" placeholder="שם קבוצה..." />
+                </div>
+                <!-- Content Type Description -->
+                <div class="col-lg-4">
+                    <label>תאור סוג תוכן : </label>
+                    <input type="text" id="txtDescriptionCT" placeholder="תאור סוג תוכן..." />
+                </div>
+                <!-- ContentType DisplayName -->
+                <div class="col-lg-4">
+                    <label>שם תצוגה של סוכ תוכן : </label>
+                    <input type="text" id="txtDisplayNameCT" placeholder="שם סוג תוכן..."/>
+                </div>
+            </div>
+            <div class="row customRow">
+                                <!--Btn-->
+                               <!-- <div class="col-lg-6">
+                                    <select id="selContentTypeParent">
+                                        <option id="0x01">פריט</option>
+                                        <option id="0x010100C568DB52D9D0A14D9B2FDCC96666E9F2007948130EC3DB064584E219954237AF39">עמוד</option>
+                                        <option id="0x0105">קישור</option>                                                                                
+                                        <option id="0x010100">קליק פריסת דף</option> 
+                                    </select>
+                                </div>  -->              
+                                <!--Btn-->
+                                <div class="col-lg-6">
+                                    <button type="button" onclick="PMOClickMng.Methods.CreateContentType()">צור סוג תוכן</button>
+                                </div>
+            </div>
+            <div class="row customRow">
+                <div class="col-lg-6">
+                    <select id="selectSiteCT1"><option>לחץ על הכפתור על מנת להציג נתונים</option></select>
+                    <button type="button" onclick="PMOClickMng.Methods.GetSiteContentTypesClick('selectSiteCT1')">הצג
+                        סוגי תוכן לאתר</button>
+                </div>
+                <div class="col-lg-6">
+                    <select id="selectSiteCol"><option>לחץ על הכפתור על מנת להציג נתונים</option></select>
+                    <button type="button" onclick="PMOClickMng.Methods.GetSiteColumns()">הצג עמודות אתר</button>
+                </div>
+            </div>
+            <div class="row customRow">
+                <div class="col-lg-12">
+                    <button type="button" onclick="PMOClickMng.Methods.AddColumnToContentType()">הוסף עמודת אתר לסוג
+                        תוכן</button>
+                </div>
+            </div>
+    </div>
+    </fieldset>
+</div>
+</div>
+<!--    Seperator   -->
+</br>
+<hr>
+
+<!--    Row 3   -->
+<div class="row customRow">
+    <div class="col-lg-12">
+        <fieldset>
+            <legend style="background-color: #8b6afc;">יצירת רשימות ושיוך סוג תוכן לרשימה</legend>
+            <div class="row customRow">
+                <div class="col-lg-12">
+                    <input type="text" id="txtListName" placeholder="שם רשימה..." />
+                    <button type="button" onclick="PMOClickMng.Methods.CreateList()">צור רשימה</button>
+                </div>
+            </div>
+            <div class="row customRow">
+                <div class="col-lg-6">
+                    <select id="selectSiteCT2">
+                        <option>לחץ על הכפתור על מנת להציג נתונים</option>
+                    </select>
+                    <button type="button" onclick="PMOClickMng.Methods.GetSiteContentTypesClick('selectSiteCT2')">הצג סוגי תוכן</button>
+                </div> 
+                <div class="col-lg-6">
+                    <select id="selectSiteLists">
+                        <option>לחץ על הכפתור על מנת להציג נתונים</option>
+                    </select>
+                    <button type="button" onclick="PMOClickMng.Methods.GetLists()">הצג רשימות</button>
+                </div>
+            </div>
+            <div class="row customRow">
+                <div class="col-lg-12">
+                    <button type="button" onclick="PMOClickMng.Methods.AddContentTypeToList()">הוסף סוג תוכן לרשימה</button>
+                </div>
+            </div>                        
+        </fieldset>
+    </div>
+</div>

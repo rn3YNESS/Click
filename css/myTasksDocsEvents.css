@@ -1,0 +1,103 @@
+﻿.myTasks{
+    background-color:rgb(231,233,248);
+    text-align: right;
+    padding: 15px;
+    padding-top: 1px;
+}
+
+.myTasksRow{
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color:rgb(53,94,126);
+}
+
+.title{
+    font-size: 25px;
+}
+
+.aText{
+    font-size: 15px;
+    text-decoration: underline;
+    color: white;
+    text-align: left;
+}
+
+.aText:visited{
+    color: white;
+}
+
+.green{
+    background-color: rgb(139, 193, 79);
+}
+
+.yellow{
+    background-color: rgb(246, 187, 67);
+}
+
+.blue{
+    background-color:rgb(53,94,126);
+}
+
+.red{
+    background-color: rgb(237, 84, 99);
+}
+
+.groupText{
+    color: rgb(28,75,107);
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.taskContentText{
+    margin-bottom: 10px;
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.docContentText{
+    margin-bottom: 10px;
+    color: black;
+    font-size: 15px;
+}
+
+.spaceRow{
+    padding-bottom: 10px;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.collapsible::before {
+    content: '+';
+    font-size: 25px;
+    color: white;
+    float: right;
+}
+
+.active::before {
+    content: "-";
+    font-size: 25px;
+    color: white;
+    float: right;
+}
+
+.ms-dlgTitleBtns{
+    margin-left: 0px;
+}
+
+.ms-dlgTitle {
+    text-align: right;
+}
+
+#dialogTitleSpan{
+    font-weight: 100;
+    font-size: 18.98px;
+}
+
+.pointer {
+    cursor: pointer;
+}

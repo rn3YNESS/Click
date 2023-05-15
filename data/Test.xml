@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xml:base="/_api/"
+    xmlns="http://www.w3.org/2005/Atom"
+    xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
+    xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+    xmlns:georss="http://www.georss.org/georss"
+    xmlns:gml="http://www.opengis.net/gml">
+    <id>4ffccd12-5eaf-494c-bd91-d78c6582fc44</id>
+    <title />
+    <updated>2022-08-11T12:21:06Z</updated>
+    <entry>
+        <id>/_api/Web/GetUserById(13)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(13)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(13)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(13)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">13</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>c:0!.s|windows</d:LoginName>
+                <d:Title>NT AUTHORITY\authenticated users</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">4</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:null="true" />
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(17)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(17)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(17)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(17)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">17</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>NT AUTHORITY\LOCAL SERVICE</d:LoginName>
+                <d:Title>NT AUTHORITY\LOCAL SERVICE</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>S-1-5-19</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(18)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(18)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(18)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(18)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">18</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|nt authority\system</d:LoginName>
+                <d:Title>NT AUTHORITY\system</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-18</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(16)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(16)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(16)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(16)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">16</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|pfe\spadmin</d:LoginName>
+                <d:Title>SharePoint Administrator</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email>spadmin@pfecorpco.com</d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">true</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-21-2849316518-1884032477-2636051289-500</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(19)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(19)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(19)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(19)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">19</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|pfe\spsvc</d:LoginName>
+                <d:Title>SharePoint Service Account</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-21-2849316518-1884032477-2636051289-1607</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(3)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(3)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(3)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(3)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">3</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>PFE\spadmin</d:LoginName>
+                <d:Title>SharePoint Setup Admin</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email>spadmin@pfecorpco.com</d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>S-1-5-21-2849316518-1884032477-2636051289-500</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(20)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(20)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(20)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(20)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">20</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|pfe\spuser</d:LoginName>
+                <d:Title>SharePoint Test User</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email>spuser@PFE.CORP.NET</d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-21-2849316518-1884032477-2636051289-3604</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(21)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(21)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(21)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(21)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">21</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|pfe\spuser2</d:LoginName>
+                <d:Title>SharePoint Test User 2</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-21-2849316518-1884032477-2636051289-5603</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(1)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(1)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(1)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(1)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">1</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>i:0#.w|sp19app01\spadmin</d:LoginName>
+                <d:Title>SP19APP01\spadmin</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">true</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>s-1-5-21-1628396497-548032856-3577994175-500</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(1073741823)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(1073741823)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(1073741823)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(1073741823)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">1073741823</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>SHAREPOINT\system</d:LoginName>
+                <d:Title>חשבון מערכת</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">1</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:type="SP.UserIdInfo">
+                    <d:NameId>S-1-0-0</d:NameId>
+                    <d:NameIdIssuer>urn:office:idp:activedirectory</d:NameIdIssuer>
+                </d:UserId>
+            </m:properties>
+        </content>
+    </entry>
+    <entry>
+        <id>/_api/Web/GetUserById(14)</id>
+        <category term="SP.User" scheme="http://schemas.microsoft.com/ado/2007/08/dataservices/scheme" />
+        <link rel="edit" href="Web/GetUserById(14)" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Alerts" type="application/atom+xml;type=feed" title="Alerts" href="Web/GetUserById(14)/Alerts" />
+        <link rel="http://schemas.microsoft.com/ado/2007/08/dataservices/related/Groups" type="application/atom+xml;type=feed" title="Groups" href="Web/GetUserById(14)/Groups" />
+        <title />
+        <updated>2022-08-11T12:21:06Z</updated>
+        <author>
+            <name />
+        </author>
+        <content type="application/xml">
+            <m:properties>
+                <d:Id m:type="Edm.Int32">14</d:Id>
+                <d:IsHiddenInUI m:type="Edm.Boolean">false</d:IsHiddenInUI>
+                <d:LoginName>c:0(.s|true</d:LoginName>
+                <d:Title>כולם</d:Title>
+                <d:PrincipalType m:type="Edm.Int32">4</d:PrincipalType>
+                <d:Email></d:Email>
+                <d:IsEmailAuthenticationGuestUser m:type="Edm.Boolean">false</d:IsEmailAuthenticationGuestUser>
+                <d:IsShareByEmailGuestUser m:type="Edm.Boolean">false</d:IsShareByEmailGuestUser>
+                <d:IsSiteAdmin m:type="Edm.Boolean">false</d:IsSiteAdmin>
+                <d:UserId m:null="true" />
+            </m:properties>
+        </content>
+    </entry>
+</feed>

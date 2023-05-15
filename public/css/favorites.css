@@ -1,0 +1,134 @@
+.formBody {
+    color: rgb(53, 94, 126) !important;
+}
+
+.linkType {
+    font-size: large;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Assistant;
+}
+
+.previewContainer {
+    margin: 30px 0 15px 0;
+}
+
+.buttonsContainer {
+    text-align: left;
+    /*position: fixed !important;*/
+    bottom: 0;
+}
+
+.btnShowPreview {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgb(53, 94, 126);
+    border: none !important;
+    width: fit-content;
+}
+
+.btnShowPreview:hover,
+button:hover,
+.imgDeleteFav,
+.imgUpdateFav {
+    cursor: pointer;
+}
+
+
+/*  HTML Elements */
+
+.favorite__input,
+.favorite__select {
+    width: 100%;
+    background-color: #edf0f9 !important;
+    border: none !important;
+    color: rgb(53, 94, 126) !important;
+    padding: 15px !important;
+}
+
+
+/*  Placeholder */
+
+ ::placeholder {
+    color: rgb(53, 94, 126) !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(53, 94, 126) !important;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(53, 94, 126) !important;
+}
+
+.formType {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.formType label {
+    font-size: medium !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formType img {
+    margin: 0 0.5rem;
+}
+
+#formFavoritesPreview {
+    margin: 1rem 0;
+    display: flex;
+}
+
+#formFavoritesPreview>div {
+    padding: 0px 20px;
+    width: calc(100%/6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#favIndexUpdate {
+    display: none;
+}
+
+.pmoFavoriteText {
+    cursor: pointer !important;
+    font-size: 13.5px;
+    color: rgb(53, 94, 126);
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+.noteSixFav {
+    font-size: 20px;
+    color: rgb(53, 94, 126);
+    font-weight: bolder;
+    width: 100%;
+}
+
+.favorites__form_typeContainer {
+    justify-content: normal !important;
+}
+
+.favorites__form__btn {
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.favorites__rowSpace {
+    margin: 10px 20px;
+}
+
+#favorites__preview {
+    flex-direction: column;
+    align-items: stretch;
+}

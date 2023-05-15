@@ -1,0 +1,390 @@
+#personalR {
+    display: flex;
+    align-items: center;
+    /*justify-content: space-between;*/
+    height: 205px;
+}
+
+#personalR>div {
+    flex: 30% 0;
+}
+
+#unitR {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /*justify-content: space-between;*/
+    height: 205px;
+}
+
+#unitR>div {
+    flex: 30% 0;
+}
+
+.interactiveCubeTitle {
+    font-weight: 500;
+}
+
+.interactiveCubePersonalTitle {
+    color: #3bd5b5 !important;
+}
+
+.interactiveCubeUnitTitle {
+    color: #8b6bfd !important;
+}
+
+.interactiveCube {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1 !important;
+    height: 100%;
+    width: 100%;
+    margin: 1rem 0 1rem 1rem;
+    border-radius: 10px;
+}
+
+.interactiveCubeMax {
+    max-width: 33%;
+}
+
+.interactiveCubepersonal {
+    background-color: #3bd5b5;
+}
+
+.interactiveCubeunit {
+    background-color: #8b6bfd;
+}
+
+.interactiveCubeInnerRight {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.interactiveCubeInnerRight__month {
+    height: 20%;
+    width: 100%;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+.interactiveCubeInnerRight__day {
+    height: 65%;
+    width: 100%;
+    color: #ffffff;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.interactiveCubeInnerRight__icon {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    height: 15%;
+    width: 100%;
+    color: #ffffff;
+}
+
+.interactiveCubeInnerRight__icon img {
+    height: 100%;
+    margin: 0 0.5rem 1rem;
+}
+
+.interactiveCubeInnerLeft {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 70%;
+}
+
+.interactiveCubeInnerLeft p {
+    padding-right: 10px;
+}
+
+.interactiveCubeInnerpersonal {
+    background-color: #3bd5b5;
+    background-image: linear-gradient(#3bd5b5, #1ac29e);
+}
+
+.interactiveCubeInnerunit {
+    background-color: #8b6bfd;
+    background-image: linear-gradient( #b890fe, #8b6bfd);
+}
+
+.currentUser {
+    color: #000000 !important;
+    font-weight: 500;
+    margin: 0.5rem 0;
+}
+
+.unit {
+    color: #8b6bfd !important;
+}
+
+.personal {
+    color: #3bd5b5 !important;
+}
+
+.reminder__moreInformationbtn {
+    margin-left: 20px;
+    border-radius: 15px;
+    height: 20px;
+    width: 40px;
+    margin-bottom: 15px;
+    padding: 0.125rem 0.5rem;
+    border-color: transparent;
+    background-color: white;
+    text-decoration: none !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.flex-container>div {
+    background-color: #f1f1f1;
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 1rem;
+}
+
+.webPartContainerTopRight,
+.webPartContainerBottomRight {
+    display: flex;
+    flex-direction: column;
+}
+
+.interactiveCubePersonalTitle,
+.interactiveCubeUnitTitle {
+    margin: 0.5rem 0;
+}
+
+.formBody {
+    color: rgb(53, 94, 126) !important;
+}
+
+.linkType {
+    font-size: large;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+    font-family: Assistant;
+}
+
+.previewContainer {
+    margin: 30px 0 15px 0;
+}
+
+.buttonsContainer {
+    text-align: left;
+    /*position: fixed !important;*/
+    bottom: 0;
+}
+
+.btnShowPreview {
+    font-weight: bold;
+    font-size: 1rem;
+    color: #ffffff;
+    background-color: rgb(53, 94, 126);
+    border: none !important;
+    width: fit-content;
+}
+
+.btnShowPreview:hover,
+button:hover,
+.imgDeleteRem,
+.imgUpdateRem {
+    cursor: pointer;
+}
+
+
+/*====================  
+    Reminbder Form
+=====================*/
+
+
+/*  Placeholder */
+
+ ::placeholder {
+    color: rgb(53, 94, 126) !important;
+    opacity: 1;
+    /* Firefox */
+}
+
+ :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: rgb(53, 94, 126) !important;
+}
+
+ ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: rgb(53, 94, 126) !important;
+}
+
+.formType {
+    display: flex;
+    /*justify-content: center;*/
+    margin: 0 10px;
+}
+
+.formType label {
+    font-size: medium !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formType img {
+    margin: 0 0.5rem;
+}
+
+#formremindersPreview {
+    margin: 1rem 0;
+    display: flex;
+}
+
+#formremindersPreview>div {
+    padding: 0px 20px;
+    width: calc(100%/6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#remIndexUpdate {
+    display: none;
+}
+
+.pmoReminderText {
+    cursor: pointer !important;
+    font-size: 13.5px;
+    color: rgb(53, 94, 126);
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+}
+
+.noteSixRem {
+    font-size: 20px;
+    color: rgb(53, 94, 126);
+    font-weight: bolder;
+    width: 100%;
+}
+
+#reminders__preview {
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#remDisplayName {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.remDisplayName__fullName {
+    background-color: #355e7e;
+    border-radius: 50%;
+    color: antiquewhite;
+    font-weight: 500;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 0.2rem;
+}
+
+
+/*PeoplePicker*/
+
+.sp-peoplepicker-topLevel {
+    border: none;
+    background-color: inherit;
+    color: inherit;
+}
+
+.sp-peoplepicker-autoFillContainer {
+    z-index: 1;
+    padding: 0px;
+    display: none;
+    cursor: default;
+    max-width: 100%;
+    min-width: 100%;
+    position: absolute;
+    border-color: #c6c6c6;
+}
+
+#remAttendee_TopSpan_InitialHelpText {
+    display: none;
+}
+
+
+/*AutoComplete*/
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+}
+
+input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
